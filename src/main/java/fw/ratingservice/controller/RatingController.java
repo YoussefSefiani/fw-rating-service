@@ -18,6 +18,11 @@ public class RatingController {
         this.ratingService = ratingService;
     }
 
+    @GetMapping(path = "ping")
+    public String ping() {
+        return "pong";
+    }
+
     @GetMapping("influencer/{influencerId}")
     public List<Rating> getInfluencerRatings(@PathVariable Long influencerId) {
        return ratingService.getInfluencerRatings(influencerId);

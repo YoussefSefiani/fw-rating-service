@@ -21,6 +21,7 @@ public class Rating {
 
     private Long brandId;
     private Long influencerId;
+    private Long partnershipId;
 
     private Float amount;
     private String description;

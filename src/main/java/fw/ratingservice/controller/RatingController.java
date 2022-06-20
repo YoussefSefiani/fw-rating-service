@@ -18,7 +18,7 @@ public class RatingController {
         this.ratingService = ratingService;
     }
 
-    @GetMapping(path = "ping")
+    @GetMapping("ping")
     public String ping() {
         return "pong";
     }

@@ -19,7 +19,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URL:http://user:password@localhost:8761}/eureka/
+      defaultZone: https://fw-discovery-server.azurewebsites.net/eureka
   instance:
     hostname: fw-rating-service.azurewebsites.net
     nonSecurePort: 80
